@@ -20,8 +20,8 @@ if uploaded_file_control is not None:
        
 
 # Calculate metrics
-control = controldata['Metric']
-treatment = testdata['Metric']
+control = controldata
+treatment = testdata
 
 # Perform t-test
 t_stat, p_value = stats.ttest_ind(control, treatment)
