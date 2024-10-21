@@ -11,11 +11,11 @@ st.title("A/B Testing App")
 uploaded_file_test = st.file_uploader("Choose a CSV file for test", type="csv")
 uploaded_file_control = st.file_uploader("Choose a CSV file for control", type="csv")
 if uploaded_file_test is not None:
-    testdata = pd.read_csv(uploaded_file)
+    testdata = pd.read_csv(uploaded_file_test)
     st.write(testdata.head())
 
 if uploaded_file_control is not None:
-    controldata = pd.read_csv(uploaded_file)
+    controldata = pd.read_csv(uploaded_file_control)
     st.write(controldata.head())
        
 
