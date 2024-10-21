@@ -97,6 +97,4 @@ if uploaded_file is not None:
     - Conversion Rate is the baseline conversion rate
     """)
 
-# Run the Streamlit app
-if __name__ == "__main__":
-    st.run()
+
